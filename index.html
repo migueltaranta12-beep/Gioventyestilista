@@ -1,0 +1,184 @@
+<div class="main-container">
+  <div class="glass-box">
+    <div class="profile">
+      <div class="logo-neon">G</div>
+      <h1>GIOVENTY ESTILISTAS</h1>
+      <p class="description">
+        <b>Salón Official | @kerastase_official & @lorealpro</b><br>
+        Servicios premium en peluquería y estilismo desde 1999. ✨
+      </p>
+    </div>
+
+    <div class="button-grid">
+      
+      <div class="dropdown">
+        <button class="neon-btn btn-gold main-dropdown" onclick="toggleDropdown()">
+          📍 NUESTRAS SUCURSALES
+        </button>
+        <div id="sucursales-list" class="dropdown-content">
+          <a href="https://wa.me/5493513762000?text=Hola%2C%20quiero%20un%20turno%20en%20Valle%20Escondido" target="_blank" class="sub-btn">
+            🟢 Valle Escondido (Córdoba)
+          </a>
+          <a href="https://wa.me/5493516131381?text=Hola%2C%20quiero%20un%20turno%20en%20Obispo%20Trejo" target="_blank" class="sub-btn">
+            🟢 Obispo Trejo (Córdoba)
+          </a>
+          <a href="https://wa.me/5493512859940?text=Hola%2C%20quiero%20un%20turno%20en%20Gioventy%20Estudio" target="_blank" class="sub-btn">
+            🟢 Gioventy Estudio (Bs. As.)
+          </a>
+        </div>
+      </div>
+
+      <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MzQ5NjMzOTg3MDcxNjMw?story_media_id=3390501409811446643_59395275337&igsh=Z2d0anR6bGRkczJ1" class="neon-btn btn-white" target="_blank">
+        ⭐ EXPERIENCIAS
+      </a>
+
+      <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDM1NDAxMjExNDkzMTM1?story_media_id=3578698958530548639_59395275337&igsh=ZGtxOXNyM2M3cDQ1" class="neon-btn btn-white" target="_blank">
+        🧴 PRODUCTOS
+      </a>
+
+      <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDQ0OTQ4NTIxODU2MzQ0?story_media_id=3412896268023213176_59395275337&igsh=MWtuYnV4YzhjaWY4aQ==" class="neon-btn btn-white" target="_blank">
+        💇‍♀️ SERVICIOS
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleDropdown() {
+  const list = document.getElementById("sucursales-list");
+  list.classList.toggle("show");
+}
+</script>
+
+<style>
+body {
+  background-color: #000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Playfair Display', serif; /* Tipografía elegante para estética premium */
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.glass-box {
+  background: linear-gradient(145deg, #0f0f0f, #050505);
+  border-radius: 40px;
+  padding: 40px 20px;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+.logo-neon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #d4af37;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-size: 35px;
+  font-weight: 300;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  text-shadow: 0 0 10px #d4af37;
+}
+
+h1 { 
+  color: #fff; 
+  font-size: 22px; 
+  letter-spacing: 3px; 
+  margin-bottom: 10px;
+}
+
+.description { 
+  color: #888; 
+  font-size: 13px; 
+  margin-bottom: 35px; 
+  line-height: 1.5;
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.neon-btn {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Dorado Premium */
+.btn-gold {
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+}
+
+.btn-gold:hover {
+  background: #d4af37;
+  color: #000;
+  box-shadow: 0 0 30px #d4af37;
+}
+
+/* Blanco Elegante */
+.btn-white {
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.btn-white:hover {
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Lógica del Desplegable */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.dropdown-content.show {
+  max-height: 300px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.sub-btn {
+  background: #111;
+  color: #eee;
+  padding: 12px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 13px;
+  border-left: 3px solid #d4af37;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.sub-btn:hover {
+  background: #222;
+  transform: translateX(5px);
+}
+</style>
